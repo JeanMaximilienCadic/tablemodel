@@ -1,6 +1,7 @@
 from typing import Optional
 from sqlmodel import Field, SQLModel, create_engine, Session
 
+
 class TableModel:
     def __init__(self, schema, engine_url, table_name="main"):
         s = f"class {table_name}(SQLModel, table=True):\n"
@@ -58,16 +59,17 @@ class TableModel:
         return repr(self._table)
 
 
-schema = [
-    ("id", int, True, True),
-    ("name", str),
-    ("secret_name", str),
-    ("age", int, True, None)
-]
+if __name__=="__main__":
+    schema = [
+        ("id", int, True, True),
+        ("name", str),
+        ("secret_name", str),
+        ("age", int, True, None)
+    ]
 
-table = TableModel(table_name="main",
-                   schema=schema,
-                   engine_url="sqlite:///database.db")
-record = table(name="Deadpond", secret_name="Dive Wilson")
-table.insert_many([record])
+    table = TableModel(table_name="main",
+                       schema=schema,
+                       engine_url="sqlite:///database.db")
+    record = table(name="Deadpond", secret_name="Dive Wilson")
+    table.insert_many([record])
 
