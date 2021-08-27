@@ -1,6 +1,5 @@
-<p align="center">
-  <a href="https://drive.google.com/uc?export=view&id=1C9fvIpkx7l63T102M7-UWe4jhQ_zKizE" alt="TableModel"></a>
-</p>
+![image](https://drive.google.com/uc?export=view&id=1_c-Ndoz0k3lsPGR63ttH5Rpdv9Hhm_i2")
+
 <p align="center">
     <em>This is a fork from SQLModel, SQL databases in Python, designed for simplicity, compatibility, and robustness.</em>
 </p>
