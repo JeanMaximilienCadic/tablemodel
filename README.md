@@ -1,4 +1,4 @@
-![image](https://drive.google.com/uc?export=view&id=1_c-Ndoz0k3lsPGR63ttH5Rpdv9Hhm_i2")
+![image](imgs/tablemodel.png)
 
 <p align="center">
     <em>This is a fork from SQLModel, SQL databases in Python, designed for simplicity, compatibility, and robustness.</em>
