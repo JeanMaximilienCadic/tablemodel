@@ -27,8 +27,8 @@ class TableModel:
                 s+=attribute_type
             s+="\n"
         exec(s)
-        exec("self._table= main")
-        exec("self.Config= main.Config")
+        exec(f"self._table= {table_name}")
+        exec(f"self.Config= {table_name}.Config")
         exec(f"self.engine = create_engine('{engine_url}')")
         exec("SQLModel.metadata.create_all(self.engine)")
 
